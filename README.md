@@ -27,8 +27,8 @@ Recuerda hacer un _clean_ (`Run-> Clean`) después para actualizar la cache de _
 ### Al _subir_ el firmware da error _timeout_
 
 Algunas placas, como la Leonardo o Micro Pro, necesitan entrar en _modo recuperación_ para poder ser reprogramadas,
-para ello basta con ejecutar el fichero `cmake/reset.py` con la dirección del puerto de la placa y justo después hacer
-upload. Ejemplo: `./reset.py /dev/ttyMCA0`
+para ello basta con ejecutar el fichero `cmake/reset.py`. Bastará con descomentar las líneas oportunas en el fichero
+`ejemplo/CMakeLists.txt`. Desgraciadamente a veces falla y requiere ejecutarlo dos veces.
 
 ### No me autocompleta en los ficheros `.ino`
 

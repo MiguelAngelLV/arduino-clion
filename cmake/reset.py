@@ -2,6 +2,10 @@
 import serial, sys
 from time import sleep
 
+print ("Reset arduino in ");
+print (sys.argv[1]);
+print("\n");
+
 serialPort = sys.argv[1]
 ser = serial.Serial(
     port=serialPort,
@@ -12,3 +16,4 @@ ser = serial.Serial(
 )
 ser.isOpen()
 ser.close() # always close port
+sleep(2)
